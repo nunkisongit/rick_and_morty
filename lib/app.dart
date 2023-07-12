@@ -3,12 +3,16 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'home/home_page.dart';
 
-class App extends ConsumerWidget {
+class App extends StatefulWidget {
   const App({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  State<App> createState() => _AppState();
+}
 
+class _AppState extends State<App> {
+  @override
+  Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Ricky and Morty',
       theme: ThemeData(
