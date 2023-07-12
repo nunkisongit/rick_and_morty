@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'home_page.dart';
+import 'home/home_page.dart';
 
 final riverpodPrototypeProvider = Provider((_) => 'Testing Riverpod Provider');
 

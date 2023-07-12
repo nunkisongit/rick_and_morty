@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:rick_and_morty/home_screen.dart';
+
+import 'home_screen.dart';
+
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key, required this.title});

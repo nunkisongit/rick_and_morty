@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
 
-  final int counter;
+  final List<HomeScreenItem> items;
 
   const HomeScreen({
     super.key,
-    required this.counter
+    required this.items
   });
 
   @override
