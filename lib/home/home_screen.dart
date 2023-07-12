@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rick_and_morty/home/home_screen_item.dart';
 
 class HomeScreen extends StatelessWidget {
 
@@ -11,19 +12,19 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          const Text(
-            'You have pushed the button this many times:',
-          ),
-          Text(
-            '$counter',
-            style: Theme.of(context).textTheme.headlineMedium,
-          ),
-        ],
-      ),
+    return ListView.builder(
+        padding: const EdgeInsets.all(8),
+        itemCount: items.length,
+        itemBuilder: (BuildContext context, int index) {
+          HomeScreenItem item = items[index];
+          return Column(
+            children: [
+              Text(item.name),
+              Text(item.status),
+              Text(item.photoUrl)
+            ],
+          );
+        }
     );
   }
 }
