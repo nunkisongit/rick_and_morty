@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'home/home_page.dart';
+import 'home/home_screen.dart';
 
 class App extends StatefulWidget {
   const App({super.key});
@@ -19,7 +18,7 @@ class _AppState extends State<App> {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomePage(title: 'Personagens'),
+      home: const HomeScreen(title: 'Personagens'),
     );
   }
 }
